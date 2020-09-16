@@ -740,8 +740,8 @@ target_compile_definitions(CPP_TEST
 )
 add_dependencies(CPP_TEST
 	XAPI_CPP
-	CTP_Quote
-	CTP_Trade
+	CTP_SE_Quote
+	CTP_SE_Trade
 )
 target_link_libraries(CPP_TEST
 	XAPI_CPP
@@ -759,8 +759,8 @@ target_link_libraries(ExampleCTP XAPI_CPP)
 target_compile_definitions(ExampleCTP PRIVATE USE_CMAKE)
 add_dependencies(ExampleCTP
 	XAPI_CPP
-	CTP_Quote
-	CTP_Trade
+	CTP_SE_Quote
+	CTP_SE_Trade
 )
 
 add_executable(ExampleXTP ${CMAKE_CURRENT_LIST_DIR}/example/cpp/XTP/example_xtp.cpp)
